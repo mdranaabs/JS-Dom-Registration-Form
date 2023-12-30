@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript DOM registration form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center m-4">Student Registration Form</h3>
+                <form class="p-4 border border-1 rounded bg-dark text-light">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="sName">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="sEmail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Course</label>
+                        <select id="sCourse" class="form-select">
+                            <option value="0">Select Course</option>
+                            <option value="MERN-Stack">MERN-Stack</option>
+                            <option value="Laravel">Laravel</option>
+                            <option value="Vue JS">Vue JS</option>
+                            <option value="Angular JS">Angular JS</option>
+                            <option value="WordPress">WordPress</option>
+                          </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <input type="text" class="form-control" id="sPhone">
+                    </div>
+                    <button style="width:100%" type="button" class="btn btn-warning fs-5 fw-bold" id="submitBtn">Submit</button>
+                  </form>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center m-4">Registration Records</h3>
+                <table class="table table-dark table-hover table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Phone Number</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table">
+                      
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
