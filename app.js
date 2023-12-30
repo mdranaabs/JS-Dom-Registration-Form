@@ -33,6 +33,10 @@ submitBtn.addEventListener("click", function(){
         cellFour.innerText = sPhone;
     }
     
+    sName = document.getElementById("sName").value = '';
+    sEmail = document.getElementById("sEmail").value = '';
+    sCourse = document.getElementById("sCourse").value = '';
+    sPhone = document.getElementById("sPhone").value = '';
 
 
         
